@@ -10,9 +10,11 @@
 <% @cocktails.each do |cocktail| %>
   <h3><%= cocktail.name %></h3>
   <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  <%= cl_image_tag("PERRIER-BLOODY.png", :radius=>3) %>
   <hr>
 <% end %>
 
 <div>
   <%= "Thank you for coming" %>
 </div>
+
